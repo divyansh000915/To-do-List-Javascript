@@ -1,4 +1,4 @@
-//Selectors
+//DOM Selectors
 const todoInput = document.querySelector('.todo-input');
 const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
@@ -50,6 +50,7 @@ function addTodo (Event){
     
 
 }
+//Function to delete
 
 function deleteCheck(e){
     //console.log(e.target);
@@ -73,6 +74,7 @@ function deleteCheck(e){
         todo.classList.toggle("completed");
     }
 }
+//Filtering Function
 
 function filterTodo(e){
     const todos = todoList.childNodes;
