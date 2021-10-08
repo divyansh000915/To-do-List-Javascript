@@ -1,4 +1,4 @@
-//Selectors
+//DOM Selectors
 const todoInput = document.querySelector('.todo-input');
 const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
@@ -10,7 +10,7 @@ todoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteCheck);
 filterOption.addEventListener('click',filterTodo);
 
-//Function
+//Function TO add list
 function addTodo (Event){
     //To Prevent from Submitting
     event.preventDefault();
@@ -50,6 +50,8 @@ function addTodo (Event){
     
 
 }
+
+//Function to delete
 
 function deleteCheck(e){
     //console.log(e.target);
